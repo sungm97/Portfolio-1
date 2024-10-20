@@ -60,9 +60,16 @@ void driver()
         {"0","-1"},
         {"NULL", ""},
     };
+    cout << "Skipping spaces" << endl;
     for (int i = 0; i < 11; i++)
     {
         int result = strcmp_case_insensitive(test1[i].string1, test1[i].string2, true);
+        cout << "The comparison of " << test1[i].string1 << " and " << test1[i].string2 << " returns " << result << endl;
+    }
+    cout << "Not skipping spaces" << endl;
+    for (int i = 0; i < 11; i++)
+    {
+        int result = strcmp_case_insensitive(test1[i].string1, test1[i].string2, false);
         cout << "The comparison of " << test1[i].string1 << " and " << test1[i].string2 << " returns " << result << endl;
     }
 }
