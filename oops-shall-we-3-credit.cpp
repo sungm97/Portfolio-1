@@ -4,7 +4,11 @@
 
 using namespace std;
 
-int validateInt(int lower = numeric_limits<int>::min(), int upper = numeric_limits<int>::max(), const string& prompt = "Please enter a value: ", const string& error = "Your value is invalid")
+int validateInt(
+    int lower = numeric_limits<int>::min(), 
+    int upper = numeric_limits<int>::max(), 
+    const string& prompt = "Please enter a value: ", 
+    const string& error = "Your value is invalid")
 {
     int input;
     bool check = false;
